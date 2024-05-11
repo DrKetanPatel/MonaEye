@@ -41,7 +41,7 @@ const Skills = () => {
                   <p className='my-4'>Sass</p>
               </div>
               <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-100 w-32'>
-                  <p className='my-4'>Mongodb</p>
+                  <p className='my-4'>Mongo db</p>
               </div>
               <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-100 w-32'>
                   <p className='my-4'>GraphQl</p>
