@@ -1,167 +1,45 @@
-import React from 'react';
-import code from '../assets/code2.png';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import street from '../assets/street.png';
+import hospital from '../assets/hospital.jpg';
+import entrance from '../assets/entrance.jpg';
 
 const Works = () => {
   return (
-    <div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
-      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-        <div className='pb-8 w-full flex justify-center items-center flex-col'>
-          <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-cyan-500'>
-            Work
-          </p>
-          <p className='py-6 text-2xl'>Check out some of my most recent work</p>
-        </div>
-{/* Container */}
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
-            {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${code})` }}
-            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-          >
-            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
-              <span className=' text-lg font-bold text-white tracking-wider'>
-                CBT Application
-              </span>
-              <p className='text-center'>A CBT web application built with React and Mongodb</p>
-              <div className='pt-8 text-center'>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Demo
-                  </button>
-                </a>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${code})` }}
-            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-          >
-            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
-              <span className=' text-lg font-bold text-white tracking-wider'>
-                CBT Application
-              </span>
-              <p className='text-center'>A CBT web application built with React and Mongodb</p>
-              <div className='pt-8 text-center'>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Demo
-                  </button>
-                </a>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${code})` }}
-            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-          >
-            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
-              <span className=' text-lg font-bold text-white tracking-wider'>
-                CBT Application
-              </span>
-              <p className='text-center'>A CBT web application built with React and Mongodb</p>
-              <div className='pt-8 text-center'>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Demo
-                  </button>
-                </a>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${code})` }}
-            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-          >
-            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
-              <span className=' text-lg font-bold text-white tracking-wider'>
-                CBT Application
-              </span>
-              <p className='text-center'>A CBT web application built with React and Mongodb</p>
-              <div className='pt-8 text-center'>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Demo
-                  </button>
-                </a>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${code})` }}
-            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-          >
-            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
-              <span className=' text-lg font-bold text-white tracking-wider'>
-                CBT Application
-              </span>
-              <p className='text-center'>A CBT web application built with React and Mongodb</p>
-              <div className='pt-8 text-center'>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Demo
-                  </button>
-                </a>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${code})` }}
-            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-          >
-            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
-              <span className=' text-lg font-bold text-white tracking-wider'>
-                CBT Application
-              </span>
-              <p className='text-center'>A CBT web application built with React and Mongodb</p>
-              <div className='pt-8 text-center'>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Demo
-                  </button>
-                </a>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          
-        </div>
+    <Carousel>
+      <div className="reviewBox">
+        <img
+          src={street}
+          className=""
+          alt=""
+          style={{ maxWidth: "1000px", maxHeight: "1000px" }}
+        />
+        <p className="reviewPerson">Kharivav Road Street View</p>
+        <a href="https://www.google.com/maps/@22.3021127,73.1979235,3a,75y,146.86h,94.87t/data=!3m6!1e1!3m4!1s8jtqaHXDEWglXhn_qGfVbQ!2e0!7i13312!8i6656?entry=ttu" target="blank">
+          <p className="reviewJob">Click to view in Google Maps</p>
+        </a>
       </div>
-    </div>
+      <div className="reviewBox">
+        <img
+          src={hospital}
+          className=""
+          alt=""
+          style={{ maxWidth: "750px", maxHeight: "750px" }}
+        />
+        <p className="reviewPerson">Mona Eye Hospital</p>
+        <p className="reviewJob"> Ankshira Apartment (1st Floor)</p>
+      </div>
+      <div className="reviewBox">
+        <img
+          src={entrance}
+          className=""
+          alt=""
+          style={{ maxWidth: "500px", maxHeight: "300px" }}
+        />
+        <p className="reviewPerson">Timings</p>
+        <p className="reviewJob">Dr Ketan Patel</p>
+      </div>
+    </Carousel>
   );
 };
 export default Works;

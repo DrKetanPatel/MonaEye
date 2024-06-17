@@ -1,19 +1,119 @@
-import React from 'react'
+import { useState } from "react";
+import emailjs from "emailjs-com";
+import React from "react";
 
+const initialState = {
+  name: "",
+  email: "",
+  phone: "",
+  message: "",
+};
 const Contact = () => {
+  const [{ name, email, phone, message }, setState] = useState(initialState);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setState((prevState) => ({ ...prevState, [name]: value }));
+  };
+  const clearState = () => setState({ ...initialState });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(name, email, phone, message);
+    emailjs.sendForm('drketanpatel', 'template_v8mbcli', e.target, 'SlKaoEFS8KI6mSnkU')
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert('Email sent successfully!');
+          clearState();
+        },
+        (error) => {
+          console.log(error.text);
+          alert('Failed to send email. Please try again.');
+        }
+      );
+  };
+
   return (
-    <div name='contact' className='w-full h-screen bg-[#0a192f] flex justify-center items-center p-4'>
-        <div className='flex flex-col max-w-[600px] w-full'>
-            <div className='pb-8 flex flex-col justify-center w-full h-full items-center'>
-                <p className='text-4xl font-bold inline border-b-4 border-cyan-500 text-gray-300'>Contact</p>
-                <p className='text-gray-300 py-4'>Send me a message</p>
+    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "40vh" }}>
+      <form name="sentMessage" onSubmit={handleSubmit}>
+        <div className="row">
+          <div className="col-md-2"></div>
+          <div className="col-md-8">
+            <div className="form-group contact-form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                className="contact-element-input"
+                placeholder="Name"
+                required
+                onChange={handleChange}
+              />
+              <p className="help-block text-danger"></p>
             </div>
-            <input className='bg-[#ccd6f6] p-2' type="text" placeholder='Name' name='name' />
-            <input className='my-4 p-2 bg-[#ccd6f6]' type="email" placeholder='Email' name='email' />
-            <textarea className='bg-[#ccd6f6] p-2' name="message" rows="10" placeholder='Message'></textarea>
-            <button className='text-white border-2 hover:bg-cyan-500 hover:border-cyan-500 px-4 py-3 my-8 mx-auto flex items-center'>Let's Collaborate</button>
+          </div>
+          <div className="col-md-2"></div>
         </div>
+        <div className="row">
+          <div className="col-md-2"></div>
+          <div className="col-md-8">
+            <div className="form-group contact-form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                className="contact-element-input"
+                placeholder="Email"
+                required
+                onChange={handleChange}
+              />
+              <p className="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-2"></div>
+          <div className="col-md-8">
+            <div className="form-group contact-form-group">
+              <input
+                type="phone"
+                id="phone"
+                name="phone"
+                className="contact-element-input"
+                placeholder="Phone"
+                required
+                onChange={handleChange}
+              />
+              <p className="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-2"></div>
+          <div className="col-md-8">
+            <div className="form-group contact-form-group">
+              <textarea
+                type="message"
+                id="message"
+                name="message"
+                className="contact-element-input"
+                placeholder="Message"
+                required
+                onChange={handleChange}
+              />
+              <p className="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div id="success"></div>
+        <div className="row flex">
+          <button type="submit" className="btn btn-custom btn-lg">
+            Submit
+          </button>
+        </div>
+      </form>
     </div>
-  )
-}
-export default Contact
+  );
+};
+export default Contact;

@@ -1,37 +1,57 @@
 import React from "react";
+import ketan from '../assets/ketan.jpg';
+import reena from '../assets/reena.jpg';
 
-const About = () => { 
+const About = () => {
   return (
-    <div
-      name="about"
-      id="about"
-      className="w-full h-screen bg-[#0a192f] text-gray-300"
-    >
-      <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className=" py-16 rounded-md bg-cyan-800 flex flex-col justify-center items-center w-4/6">
-          <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 mb-4">
-            <div className="sm:text-right pb-8 pl-4">
-              <p className="text-4xl font-bold inline border-b-4 border-cyan-500">
-                About
-              </p>
-            </div>
-            <div></div>
-          </div>
-          <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
-            <div className="sm:text-right text-4xl font-bold">
-              <p>
-                Hi. I'm Taminoturoko Briggs, nice to meet you. Please take a
-                look around.
-              </p>
+    <div className="about-section" style={{ paddingTop: "5px" }}>
+      <div className="container">
+        <div className="doctor-section">
+          <div className="doctor-images" style={{ display: "flex" }}>
+            <div style={{ marginRight: "40px" }}>
+              <img
+                src={ketan}
+                className=""
+                alt=""
+                style={{ maxWidth: "225px", maxHeight: "225px" }}
+              />
+              <h3 style={{ textAlign: "left" }}>Dr. Ketan Patel</h3>
+              <h5 style={{ textAlign: "left" }}>(M.S Ophthalmic Surgeon)</h5>
             </div>
             <div>
-              <p>
-                {" "}
-                A software developer with experience in building Responsive and
-                Scalable Web apps. I am well-knowledged in UI/UX principles and
-                practices. In addition to software development, I am also a
-                technical writer--simplifying topics/concepts on the web.
-              </p>
+              <img
+                src={reena}
+                className=""
+                alt=""
+                style={{ maxWidth: "225px", maxHeight: "225px" }}
+              />
+              <h3 style={{ textAlign: "left" }}>Dr. Reena Patel</h3>
+              <h5 style={{ textAlign: "left" }}>(M.S Ophthalmic Surgeon)</h5>
+            </div>
+          </div>
+          <div className="doctor-info" style={{ display: "flex", flexDirection: "column", marginTop: "20px"}}>
+            <p>Dr. Ketan Patel is a Veteran M.S Ophthalmic Surgeon with 25 years of experience in Phacosurgery and Cataract Operations.</p>
+            <div className="contact-details">
+              <div className="contact-item">
+                <h5>Address</h5>
+                <p><strong>
+                <a href="https://maps.app.goo.gl/P8FxNfQNDn1uttgi9" target="_blank" style={{ textDecoration: 'underline', color: 'inherit' }}>
+                  C/O Mona Eye Hospital, 1st Floor Ankshira Apartment, Kharivav Road, Raopura, Vadodara - 390001
+                </a>
+                </strong></p>
+              </div>
+              <div className="contact-item">
+                <h5>Timings</h5>
+                <p><strong>Mon - Sat:<br/>12:30 pm - 2:30 pm<br />5:30 pm - 7:00 pm<br />Sun: Closed</strong></p>
+              </div>
+              <div className="contact-item">
+                <h5>Phone Numbers</h5>
+                <p>
+                  <strong>Dr Ketan Patel : </strong>(9824030154) <br />
+                  <strong>Dr Reena Patel : </strong>(9898485037) <br />
+                  <strong>Mona Eye Hospital : </strong>(02652412748) <br />
+                </p>
+              </div>
             </div>
           </div>
         </div>
