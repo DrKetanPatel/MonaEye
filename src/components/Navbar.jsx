@@ -38,7 +38,7 @@ const Navbar = () => {
             <li>
               <button
                 className="navMenu"
-                onClick={() => copyToClipboard("(9824030154)", setCopied1)}
+                onClick={() => copyToClipboard("9824030154", setCopied1)}
               >
                 {copied1 ? "Copied!" : "(9824030154)"}
               </button>
@@ -46,7 +46,7 @@ const Navbar = () => {
             <li>
               <button
                 className="navMenu"
-                onClick={() => copyToClipboard("(9898485037)", setCopied2)}
+                onClick={() => copyToClipboard("9898485037", setCopied2)}
               >
                 {copied2 ? "Copied!" : "(9898485037)"}
               </button>
@@ -54,7 +54,7 @@ const Navbar = () => {
             <li>
               <button
                 className="navMenu"
-                onClick={() => copyToClipboard("(02652412748)", setCopied3)}
+                onClick={() => copyToClipboard("02652412748", setCopied3)}
               >
                 {copied3 ? "Copied!" : "(02652412748)"}
               </button>
