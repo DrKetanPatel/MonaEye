@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MonaEye/static/css/main.8d54c2d8.css",
-    "main.js": "/MonaEye/static/js/main.d6a8f6c1.js",
+    "main.js": "/MonaEye/static/js/main.da33399a.js",
     "static/media/street.png": "/MonaEye/static/media/street.d868731a936e082f9306.png",
     "static/media/entrance.jpg": "/MonaEye/static/media/entrance.b5b53420fd3e26decfec.jpg",
     "static/media/hospital.jpg": "/MonaEye/static/media/hospital.835da0261d277e5bd0ab.jpg",
@@ -10,10 +10,10 @@
     "static/media/ketan.jpg": "/MonaEye/static/media/ketan.eb3bcffed88d59a67d63.jpg",
     "index.html": "/MonaEye/index.html",
     "main.8d54c2d8.css.map": "/MonaEye/static/css/main.8d54c2d8.css.map",
-    "main.d6a8f6c1.js.map": "/MonaEye/static/js/main.d6a8f6c1.js.map"
+    "main.da33399a.js.map": "/MonaEye/static/js/main.da33399a.js.map"
   },
   "entrypoints": [
     "static/css/main.8d54c2d8.css",
-    "static/js/main.d6a8f6c1.js"
+    "static/js/main.da33399a.js"
   ]
 }
